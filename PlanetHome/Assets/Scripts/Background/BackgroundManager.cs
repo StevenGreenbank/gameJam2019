@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using YamlDotNet;
+using UnityEngine.UI;
 
-public class BackgroundManager : MonoBehaviour
+public class BackgroundManager : Singleton<BackgroundManager> 
 {
     // Start is called before the first frame update
-    public GameObject Background;
+    public Image Background;
+    public SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -18,10 +20,11 @@ public class BackgroundManager : MonoBehaviour
     /// Change the background to the picture we want and make sure it's visible.
     /// </summary>
     /// <param name="backgroundObject"></param>
-    void SetBackground(GameObject backgroundObject)
+    public void SetBackground(Sprite backgroundObject)
     {
-        Background = backgroundObject;
-        Background.SetActive(true);
+        Background.sprite = backgroundObject;
+        spriteRenderer.sprite = backgroundObject;
+       // Background.SetActive(true);
     }
 
     // Update is called once per frame

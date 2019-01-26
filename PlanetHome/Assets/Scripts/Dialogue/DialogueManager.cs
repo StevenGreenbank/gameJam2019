@@ -8,16 +8,29 @@ public class DialogueManager : Singleton<DialogueManager>
     public Text nameText;
     public Text dialogueText;
     private Queue<string> sentences;
+    public Image image;
 
     void Start()
     {
         sentences = new Queue<string>();
     }
 
+    public void HideDialogueBox()
+    {
+        SetDialogueBoxState(false);
+    }
+
+    public void ShowDialogueBox()
+    {
+        SetDialogueBoxState(true);
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
         Debug.Log("Starting convo with " + dialogue.name);
         nameText.text = dialogue.name;
+
+        SetDialogueBoxState(true);
 
         sentences.Clear();
 
@@ -45,5 +58,12 @@ public class DialogueManager : Singleton<DialogueManager>
     public void EndDialogue()
     {
         Debug.Log("End of conversation");
+        SetDialogueBoxState(false);
+    }
+
+    private void SetDialogueBoxState(bool active)
+    {
+        image.enabled = active;
+        image.transform.gameObject.SetActive(active);
     }
 }
