@@ -23,7 +23,6 @@ public class BackgroundManager : Singleton<BackgroundManager>
     public void SetBackground(Sprite backgroundObject)
     {
         Background.sprite = backgroundObject;
-        spriteRenderer.sprite = backgroundObject;
        // Background.SetActive(true);
     }
 
