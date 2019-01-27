@@ -1,0 +1,4 @@
+removeallsprites
+closedialogue
+background~Jungle0
+hotspot~BlackBox~JungleTestPart2~2.55~-3.77

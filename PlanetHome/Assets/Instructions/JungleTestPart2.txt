@@ -1,0 +1,2 @@
+removeallsprites
+background~Jungle1
