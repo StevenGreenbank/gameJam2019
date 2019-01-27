@@ -91,7 +91,7 @@ public class GameManager : Singleton<GameManager>
                 SetBackground(instruction.variables[0]);
                 break;
             case "addsprite":
-                AddSprite(instruction.variables[0], Int32.Parse(instruction.variables[1]), Int32.Parse(instruction.variables[2]));
+                AddSprite(instruction.variables[0], Single.Parse(instruction.variables[1]), Single.Parse(instruction.variables[2]));
                 break;
             case "replacesprite":
                 ReplaceSprite(instruction.variables[0], instruction.variables[1]);
@@ -124,7 +124,7 @@ public class GameManager : Singleton<GameManager>
                 CloseDialogue();
                 break;
             case "hotspot":
-                Hotspot(instruction.variables[0], instruction.variables[1], Int32.Parse(instruction.variables[2]), Int32.Parse(instruction.variables[3]));
+                Hotspot(instruction.variables[0], instruction.variables[1], Single.Parse(instruction.variables[2]), Single.Parse(instruction.variables[3]));
                 break;
             case "set":
                 SetValue(instruction.variables[0], Int32.Parse(instruction.variables[1]));
@@ -247,7 +247,7 @@ public class GameManager : Singleton<GameManager>
         LoadScript(script);
     }
 
-    private void Hotspot(string spriteTag, string scriptName, int x, int y)
+    private void Hotspot(string spriteTag, string scriptName, float x, float y)
     {
         Vector3 coordinates = new Vector3(x, y, 0f);
 
@@ -267,7 +267,9 @@ public class GameManager : Singleton<GameManager>
         string name = variables[0];
         var trimmed = variables.ToList();
         trimmed.RemoveAt(0);
-        dialogueManager.dialogueEnd += RunScript;
+        // horrible hack
+        if (dialogueManager.dialogueEnd == null)
+            dialogueManager.dialogueEnd += RunScript;
         dialogueManager.StartDialogue(new Dialogue(name, trimmed.ToArray()));
     }
 
@@ -308,7 +310,7 @@ public class GameManager : Singleton<GameManager>
         backgroundManager.SetBackground(backgroundTag);
     }
 
-    void AddSprite(string spriteTag, int x, int y)
+    void AddSprite(string spriteTag, float x, float y)
     {
         Vector3 coordinates = new Vector3(x, y, 0f);
         spriteManager.AddSprite(coordinates, spriteTag);
