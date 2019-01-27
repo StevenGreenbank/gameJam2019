@@ -13,14 +13,19 @@ public class GameManager : Singleton<GameManager>
     public SpriteManager spriteManager;
     public AudioManager audioManager;
 
+    // current script to load
     public TextAsset instructionsScript;
+    // list of all scripts, for searching for script via name
     public TextAsset[] scripts;
-    private string[] scriptLines;
+    // list of instructions to run
     private Queue<Instruction> instructions;
+
+    private Dictionary<string, int> gameValues;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameValues = new Dictionary<string, int>();
     }
 
     /// <summary>
@@ -32,16 +37,16 @@ public class GameManager : Singleton<GameManager>
         instructionsScript = script;
         // code to load a script from file
         string fs = instructionsScript.text;
-        scriptLines = Regex.Split(fs, "\n|\r|\r\n");
+        string[] scriptLines = Regex.Split(fs, "\n|\r|\r\n");
 
-        ParseScript();
+        ParseScript(scriptLines);
         RunScript();
     }
 
     /// <summary>
     /// take raw script lines, convert them to commands.
     /// </summary>
-    void ParseScript()
+    void ParseScript(string[] scriptLines)
     {
         foreach (string line in scriptLines)
         {
@@ -74,6 +79,9 @@ public class GameManager : Singleton<GameManager>
         bool runNextInstruction = true;
         switch (instruction.command.ToLower())
         {
+            case "else":
+                RemoveUnusedBranchCommands();
+                break;
             case "background":
                 SetBackground(instruction.variables[0]);
                 break;
@@ -113,6 +121,18 @@ public class GameManager : Singleton<GameManager>
             case "hotspot":
                 Hotspot(instruction.variables[0], instruction.variables[1], Int32.Parse(instruction.variables[2]), Int32.Parse(instruction.variables[3]));
                 break;
+            case "set":
+                SetValue(instruction.variables[0], Int32.Parse(instruction.variables[1]));
+                break;
+            case "add":
+                AddValue(instruction.variables[0], Int32.Parse(instruction.variables[1]));
+                break;
+            case "subtract":
+                SubtractValue(instruction.variables[0], Int32.Parse(instruction.variables[1]));
+                break;
+            case "if":
+                BranchStatement(instruction.variables[0], instruction.variables[1], instruction.variables[2]);
+                break;
             default:
                 break;
         }
@@ -120,6 +140,72 @@ public class GameManager : Singleton<GameManager>
             RunScript();
     }
 
+    private void RemoveUnusedBranchCommands()
+    {
+        Instruction trash;
+        do
+        {
+            trash = instructions.Dequeue();
+
+        } while (trash.command != "else" && trash.command != "end");
+    }
+    private void BranchStatement(string value1, string operation, string value2)
+    {
+        bool result = false;
+        int intValue1;
+        int intValue2;
+        if (!Int32.TryParse(value1, out intValue1))
+        {
+            intValue1 = gameValues[value1];
+        }
+        if (!Int32.TryParse(value2, out intValue2))
+        {
+            intValue2 = gameValues[value2];
+        }
+
+        switch (operation)
+        {
+            case "=":
+                if (intValue1 == intValue2)
+                    result = true;
+                break;
+            case ">":
+                if (intValue1 > intValue2)
+                    result = true;
+                break;
+            case "<":
+                if (intValue1 < intValue2)
+                    result = false;
+                break;
+        }
+
+        if (!result)
+        {
+            RemoveUnusedBranchCommands();
+        }
+    }
+
+    private void SubtractValue(string key, int value)
+    {
+        gameValues[key] = gameValues[key] - value;
+    }
+
+    private void AddValue(string key, int value)
+    {
+        gameValues[key] = gameValues[key] + value;
+    }
+
+    private void SetValue(string key, int value)
+    {
+        if (gameValues.ContainsKey(key))
+        {
+            gameValues[key] = value;
+        }
+        else
+        {
+            gameValues.Add(key, value);
+        }
+    }
 
     public TextAsset FindScriptFromName(string scriptName)
     {

@@ -1,5 +1,5 @@
 Background, spaceship
 AddSprite, pachimari, 2, 2
 dialogue, Marshall, it's working!  it's working!, Gonna have to find a new way to delimit the lines though.
-Wait, 5
+Wait, 2
 Hotspot, pachimari, testscript2, 4, -3

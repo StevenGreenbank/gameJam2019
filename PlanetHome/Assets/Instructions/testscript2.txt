@@ -1,1 +1,9 @@
 AddSprite, evilchad, -4, 4
+Set, hasforestitem, 0
+Add, hasforestitem, 1
+Wait, 2
+if, hasforestitem, =, 0
+AddSprite, evilchad, -2, 2
+else
+Background, mountains
+end
