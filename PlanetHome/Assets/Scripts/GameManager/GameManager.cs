@@ -82,6 +82,10 @@ public class GameManager : Singleton<GameManager>
             case "else":
                 RemoveUnusedBranchCommands();
                 break;
+            case "loadscript":
+                TextAsset asset = FindScriptFromName(instruction.variables[0]);
+                LoadScript(asset);
+                break;
             case "background":
                 SetBackground(instruction.variables[0]);
                 break;
@@ -145,7 +149,14 @@ public class GameManager : Singleton<GameManager>
         Instruction trash;
         do
         {
-            trash = instructions.Dequeue();
+            if (instructions.Count > 0)
+            {
+                trash = instructions.Dequeue();
+            }
+            else
+            {
+                throw new Exception("Encountered an if statement without an end!");
+            }
 
         } while (trash.command != "else" && trash.command != "end");
     }

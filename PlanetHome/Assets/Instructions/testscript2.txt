@@ -5,5 +5,6 @@ Wait, 2
 if, hasforestitem, =, 0
 AddSprite, evilchad, -2, 2
 else
+RemoveAllSprites
 Background, mountains
 end
