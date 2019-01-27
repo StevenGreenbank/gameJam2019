@@ -10,19 +10,11 @@ public class VideoManager : Singleton<VideoManager>
     public RawImage movieScreen;
     public MovieTexture[] movies;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlayMovie(string movieName)
     {
+        movieScreen.enabled = true;
         var movie = FindMovie(movieName);
         movieScreen.texture = movie;
         movie.Play();
@@ -30,6 +22,7 @@ public class VideoManager : Singleton<VideoManager>
 
     public void StopMovie(string movieName)
     {
+        movieScreen.enabled = false;
         MovieTexture movie = movieScreen.texture as MovieTexture;
         movie.Stop();
     }

@@ -39,9 +39,9 @@ public class BackgroundManager : Singleton<BackgroundManager>
        // Background.SetActive(true);
     }
 
-    public void SetBackground(string backgroundTag)
+    public void SetBackground(string backgroundName)
     {
-        GameObject background = backgrounds.FirstOrDefault(x => x.tag.Equals(backgroundTag, StringComparison.CurrentCultureIgnoreCase));
+        GameObject background = backgrounds.FirstOrDefault(x => x.name.Equals(backgroundName, StringComparison.CurrentCultureIgnoreCase));
         SpriteRenderer picture = background.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = picture.sprite;
         ScaleBackground();
