@@ -4,12 +4,15 @@ using UnityEngine;
 using System.IO;
 using YamlDotNet;
 using UnityEngine.UI;
+using System.Linq;
+using System;
 
 public class BackgroundManager : Singleton<BackgroundManager> 
 {
     // Start is called before the first frame update
     public Sprite Background;
     public SpriteRenderer spriteRenderer;
+    public GameObject[] backgrounds;
 
     public void HideBackground()
     {
@@ -34,6 +37,14 @@ public class BackgroundManager : Singleton<BackgroundManager>
         spriteRenderer.sprite = backgroundObject;
         ScaleBackground();
        // Background.SetActive(true);
+    }
+
+    public void SetBackground(string backgroundTag)
+    {
+        GameObject background = backgrounds.FirstOrDefault(x => x.tag.Equals(backgroundTag, StringComparison.CurrentCultureIgnoreCase));
+        Sprite picture = background.GetComponent<Sprite>();
+        spriteRenderer.sprite = picture;
+        ScaleBackground();
     }
 
 

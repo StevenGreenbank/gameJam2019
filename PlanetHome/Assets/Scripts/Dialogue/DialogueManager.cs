@@ -9,6 +9,8 @@ public class DialogueManager : Singleton<DialogueManager>
     public Text dialogueText;
     private Queue<string> sentences;
     public Image image;
+    public bool isInDialogue;
+    public Dictionary<string, string> textStuff;
 
     void Start()
     {
@@ -31,6 +33,7 @@ public class DialogueManager : Singleton<DialogueManager>
         nameText.text = dialogue.name;
 
         SetDialogueBoxState(true);
+        isInDialogue = true;
 
         sentences.Clear();
 
@@ -59,6 +62,7 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         Debug.Log("End of conversation");
         SetDialogueBoxState(false);
+        isInDialogue = false;
     }
 
     private void SetDialogueBoxState(bool active)
