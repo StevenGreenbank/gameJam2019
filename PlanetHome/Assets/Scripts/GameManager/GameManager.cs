@@ -207,12 +207,22 @@ public class GameManager : Singleton<GameManager>
 
     private void SubtractValue(string key, int value)
     {
-        gameValues[key] = gameValues[key] - value;
+        if (gameValues.ContainsKey(key))
+        {
+            gameValues[key] = gameValues[key] - value;
+        }
+        else
+            throw new Exception("Key " + key + " not found");
     }
 
     private void AddValue(string key, int value)
     {
-        gameValues[key] = gameValues[key] + value;
+        if (gameValues.ContainsKey(key))
+        { 
+            gameValues[key] = gameValues[key] + value;
+        }
+        else
+            throw new Exception("Key " + key + " not found");
     }
 
     private void SetValue(string key, int value)

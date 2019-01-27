@@ -64,9 +64,20 @@ public class SpriteManager : Singleton<SpriteManager>
 
     public void RemoveAllSprites()
     {
+
+        /*while(spriteParent.transform.childCount > 0)
+        {
+            Transform child = transform.GetChild(0);
+            child.parent = null;
+            Destroy(child.gameObject);
+        }*/
+
+        var children = GetComponentsInChildren<Transform>(spriteParent);
+
+      //  var children = new List<Transform>(spriteParent.transform);
+
         foreach (Transform transform in spriteParent.transform)
         {
-            transform.SetParent(null);
             Destroy(transform.gameObject);
         }
 
@@ -75,7 +86,7 @@ public class SpriteManager : Singleton<SpriteManager>
     internal void CreateHotspotSprite(string spriteTag, TextAsset script, Vector3 coordinates)
     {
         GameObject instance = AddSprite(coordinates, spriteTag);
-        
+
         instance.AddComponent<CollisionScript>();
         CollisionScript collisionScript = instance.GetComponent<CollisionScript>();
         collisionScript.script = script;
