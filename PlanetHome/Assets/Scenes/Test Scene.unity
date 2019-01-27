@@ -455,7 +455,207 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 0}
-  sounds: []
+  sounds:
+  - name: Ayzax_A-true-adventurer
+    clip: {fileID: 8300000, guid: 18f475f4d56dc024da380140af09b635, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_Hello
+    clip: {fileID: 8300000, guid: a12ff6e970301904da47113cdb61eb97, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_I-m-Ayzax
+    clip: {fileID: 8300000, guid: 3da9a9dd7a0c1db448dcf8277b803ca5, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_Thank-you
+    clip: {fileID: 8300000, guid: 0714825dbb4c3744eaae44721017524c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_Unfortunately
+    clip: {fileID: 8300000, guid: e08c3a1593f8db34aae29baf6d9ffece, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_You-will-prevail
+    clip: {fileID: 8300000, guid: 14825d7f3a4a82d4386d84b685f4bee0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_Hi
+    clip: {fileID: 8300000, guid: 8f2247e08f9a2534bb87f1e5e753a1e0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_I-can-help
+    clip: {fileID: 8300000, guid: 99f0586c61299d54194148513ab9f5ca, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_I-m-Gloonk
+    clip: {fileID: 8300000, guid: 510844ca5aaddac4f981c87deeb0bec5, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_That-must-be-it
+    clip: {fileID: 8300000, guid: d25f19a4b69affb49a1778b055590d8a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_you-ll-do-fine
+    clip: {fileID: 8300000, guid: 1a6f3b66293a4d048a92236cb2647a09, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Don-t-Worry
+    clip: {fileID: 8300000, guid: 86f374542321e1140b6068f3b718ae69, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Here-you-go
+    clip: {fileID: 8300000, guid: eb0f306c39e8d5e4695bcf22df6cf2ba, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Hey
+    clip: {fileID: 8300000, guid: d8d2ae83204e6d942b839172357b7e7a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Hey-check-this-out
+    clip: {fileID: 8300000, guid: 09051a6f9d7f1c347864ac2573f900ad, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Names-Kasma
+    clip: {fileID: 8300000, guid: 0b79bd6bc38dffe41a254c4cb06ee201, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Revolution
+    clip: {fileID: 8300000, guid: 0027645d34cbed248a79ea61d0a860de, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Sorry
+    clip: {fileID: 8300000, guid: 831974ea03cdd0c48abeb8dbb8485a76, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Thanks
+    clip: {fileID: 8300000, guid: b46f0405730a5e6488b12c531a4be489, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Who-Cares
+    clip: {fileID: 8300000, guid: 29879f40edc101a4c830760591cc3ec1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &376836197
 Transform:
   m_ObjectHideFlags: 0
@@ -470,6 +670,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &474607446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474607447}
+  - component: {fileID: 474607449}
+  - component: {fileID: 474607448}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &474607447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474607446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 914172474}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &474607448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474607446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &474607449
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474607446}
+  m_CullTransparentMesh: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +998,7 @@ RectTransform:
   m_Children:
   - {fileID: 2007972478}
   - {fileID: 221308245}
+  - {fileID: 474607447}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -893,10 +1166,13 @@ MonoBehaviour:
   backgroundManager: {fileID: 1724932753}
   spriteManager: {fileID: 1602150109}
   audioManager: {fileID: 376836196}
+  videoManager: {fileID: 0}
   instructionsScript: {fileID: 0}
   scripts:
   - {fileID: 4900000, guid: 8d4038a895a4b0446828069b2c50b07e, type: 3}
   - {fileID: 4900000, guid: 82a6c69f4affbad44bfbaba251a9e534, type: 3}
+  - {fileID: 4900000, guid: 3d3f798cbde8bcb49a58e18494527394, type: 3}
+  - {fileID: 4900000, guid: ffd2224899a76934985a37da6fbc7c92, type: 3}
 --- !u!4 &1223696066
 Transform:
   m_ObjectHideFlags: 0
@@ -1019,7 +1295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef63d8a494ef70e4592e4347848bc189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScript: {fileID: 4900000, guid: 8d4038a895a4b0446828069b2c50b07e, type: 3}
+  startScript: {fileID: 4900000, guid: 3d3f798cbde8bcb49a58e18494527394, type: 3}
   gm: {fileID: 1223696065}
 --- !u!4 &1596060089
 Transform:
@@ -1068,6 +1344,8 @@ MonoBehaviour:
   sprites:
   - {fileID: 3811431378171405412, guid: 2be2904820cabbd439be53ca5c2adb57, type: 3}
   - {fileID: 9009880213317359004, guid: 03a2fe6ccbde09c45ab20711565b6d3a, type: 3}
+  - {fileID: 7562621557280872780, guid: b1acf8900be40764e82f36c5a258cafb, type: 3}
+  - {fileID: 7562621557280872780, guid: b1acf8900be40764e82f36c5a258cafb, type: 3}
 --- !u!4 &1602150110
 Transform:
   m_ObjectHideFlags: 0
@@ -1195,6 +1473,25 @@ MonoBehaviour:
   backgrounds:
   - {fileID: 7475213921930786161, guid: 4a830e8c54ab35447a49c076ec1f17f7, type: 3}
   - {fileID: 340071886074433872, guid: 6bb1872b4ceacf14f9c819a9f8cad8c1, type: 3}
+  - {fileID: 4862441573932006062, guid: 1354337d70180c1429342c946b2def1a, type: 3}
+  - {fileID: 6565393499230160237, guid: 6376b919f0ef47b4fb0abd60cbf7066f, type: 3}
+  - {fileID: 5422829773321073192, guid: e5c61f05779a696459df5576abc27be9, type: 3}
+  - {fileID: 8559457861758782007, guid: ed18bb27dc073d14eaca5596b9fc79c9, type: 3}
+  - {fileID: 3759289766332045989, guid: 194ca723c1a7e2a458c4c00ea8e6d5a7, type: 3}
+  - {fileID: 4710587903984093837, guid: 665d4d95e318ad04098a24b92db5e678, type: 3}
+  - {fileID: 9128137414616645009, guid: 469f7de8cfc112444b6b49afd72a6899, type: 3}
+  - {fileID: 3446801071347644634, guid: cef33308df26a50469befc93985bf971, type: 3}
+  - {fileID: 6082085006704406001, guid: 671cfe888a1e98b4893d3d41e0b77070, type: 3}
+  - {fileID: 1091031576831427698, guid: 29fe2a7f93eaf6b4b8c135b9ffc087c1, type: 3}
+  - {fileID: 3748773201652212550, guid: 8b31540cf1b86674ebd8735f6870c225, type: 3}
+  - {fileID: 380525629368962375, guid: 5beb546a244591b4781dbfe2e0753801, type: 3}
+  - {fileID: 1072934844606950209, guid: 92e4f2378d764dc4cb2c289dbee361c1, type: 3}
+  - {fileID: 3165721999047395157, guid: fbb2b6af4bfbe024a9a0dc32c97dc813, type: 3}
+  - {fileID: 3754744286505335365, guid: f7998a59fe6986647b21e8d837aea186, type: 3}
+  - {fileID: 3058054449785448149, guid: a7c23d093b7458e4b9be3affe3ac1bee, type: 3}
+  - {fileID: 915105329325189776, guid: 56e4b750c00c3584796f38dd0bcf0c9c, type: 3}
+  - {fileID: 8668875912760054490, guid: 2de3d52f57bca6345a31f9d46d5779a7, type: 3}
+  - {fileID: 4743013357037994266, guid: 3e15f72e584e9fe4e8f70bf8a8c07b7b, type: 3}
 --- !u!4 &1724932754
 Transform:
   m_ObjectHideFlags: 0
