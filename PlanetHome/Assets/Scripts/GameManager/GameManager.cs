@@ -13,6 +13,7 @@ public class GameManager : Singleton<GameManager>
     public SpriteManager spriteManager;
     public AudioManager audioManager;
     public VideoManager videoManager;
+    public AudioManager soundManager;
 
     // current script to load
     public TextAsset instructionsScript;
@@ -280,7 +281,7 @@ public class GameManager : Singleton<GameManager>
 
     private void PlaySound(string soundTag)
     {
-        audioManager.Play(soundTag);
+        soundManager.Play(soundTag);
     }
 
     private void PlayMusic(string songName, bool loop)
