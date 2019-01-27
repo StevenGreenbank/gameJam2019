@@ -1,0 +1,8 @@
+background~Rune0
+wait~5
+background~Rune0
+wait~5
+background~Sky0
+wait5
+background~Sky1
+wait5

@@ -1,4 +1,5 @@
 background~titlescreen
+closedialogue
 wait~5
 background~ blackscreen
 dialogue~Narrator~ I thought I’d just taken a little damage when I spiralled towards this planet. I figured I could just land, check it out, and get back out again.~Flying between mountains suspended in a weird gravity field, I currently think otherwise.
