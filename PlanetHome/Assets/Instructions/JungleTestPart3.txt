@@ -1,0 +1,5 @@
+removeallsprites
+closedialogue
+playsound~musalien2
+background~Jungle2
+hotspot~BlackBox~JungleTestPart4~-0.75~-1.03

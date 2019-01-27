@@ -1,0 +1,4 @@
+removeallsprites
+closedialogue
+playsound~SHUT_UP
+background~Jungle6
