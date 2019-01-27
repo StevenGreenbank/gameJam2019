@@ -6,6 +6,7 @@ using System;
 
 public class SpriteManager : Singleton<SpriteManager>
 {
+    public GameManager gm;
     // holds all the sprites, whether it be game objects or characters
     public GameObject[] sprites;
     private Transform spriteParent;
@@ -16,7 +17,7 @@ public class SpriteManager : Singleton<SpriteManager>
     }
 
 
-    public void AddSprite(Vector3 coordinates, string spriteTag)
+    public GameObject AddSprite(Vector3 coordinates, string spriteTag)
     {
         GameObject sprite = sprites.FirstOrDefault(x => x.tag.Equals(spriteTag, StringComparison.CurrentCultureIgnoreCase));
         if (sprite == null)
@@ -25,6 +26,12 @@ public class SpriteManager : Singleton<SpriteManager>
         }
         GameObject instance = Instantiate(sprite, coordinates, Quaternion.identity) as GameObject;
         instance.transform.SetParent(spriteParent);
+        return instance;
+    }
+
+    public void TestDelegateFunction()
+    {
+        Debug.Log("delegate function worked");
     }
 
     public void ChangeSprite(string oldSpriteTag, string newSpriteTag)
@@ -65,5 +72,20 @@ public class SpriteManager : Singleton<SpriteManager>
 
     }
 
-    // Update is called once per frame
+    internal void CreateHotspotSprite(string spriteTag, TextAsset script, Vector3 coordinates)
+    {
+        GameObject instance = AddSprite(coordinates, spriteTag);
+        
+        instance.AddComponent<CollisionScript>();
+        CollisionScript collisionScript = instance.GetComponent<CollisionScript>();
+        collisionScript.script = script;
+        collisionScript.SetDelegate(RunHotSpotDelegate);
+    }
+
+    private void RunHotSpotDelegate(TextAsset script)
+    {
+        Debug.Log("Before loading script");
+        gm.LoadScript(script);
+        Debug.Log("After Loading script");
+    }
 }

@@ -3,32 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System;
+using System.IO;
+using System.Text.RegularExpressions;
 
 public class GameManager : Singleton<GameManager>
 {
-    DialogueTrigger dialogueTrigger = new DialogueTrigger();
+    public DialogueManager dialogueManager;
+    public BackgroundManager backgroundManager;
+    public SpriteManager spriteManager;
+    public AudioManager audioManager;
 
-    DialogueManager dialogueManager = new DialogueManager();
-    BackgroundManager backgroundManager = new BackgroundManager();
-    SpriteManager spriteManager = new SpriteManager();
-    AudioManager audioManager = new AudioManager();
-
-    public string scriptName;
+    public TextAsset instructionsScript;
+    public TextAsset[] scripts;
     private string[] scriptLines;
     private List<Instruction> instructions;
 
     // Start is called before the first frame update
     void Start()
     {
-  
     }
 
     /// <summary>
     /// Take a script name file, load lines into scriptLines
     /// </summary>
-    void LoadScript()
+    public void LoadScript(TextAsset script)
     {
+        instructions = new List<Instruction>();
+        instructionsScript = script;
         // code to load a script from file
+        string fs = instructionsScript.text;
+        scriptLines = Regex.Split(fs, "\n|\r|\r\n");
+
+        ParseScript();
+        RunScript();
     }
 
     /// <summary>
@@ -38,12 +45,15 @@ public class GameManager : Singleton<GameManager>
     {
         foreach (string line in scriptLines)
         {
-            string[] split = line.Split(',');
-            string command = split[0].Trim();
-            var splitList = split.ToList().Select(x => x.Trim()).ToList();
-            splitList.RemoveAt(0);
-            split = splitList.ToArray();
-            instructions.Add(new Instruction(command, split));
+            if (line.Trim().Length > 0)
+            {
+                string[] split = line.Split(',');
+                string command = split[0].Trim();
+                var splitList = split.ToList().Select(x => x.Trim()).ToList();
+                splitList.RemoveAt(0);
+                split = splitList.ToArray();
+                instructions.Add(new Instruction(command, split));
+            }
         }
     }
 
@@ -75,7 +85,8 @@ public class GameManager : Singleton<GameManager>
                 RemoveAllSprites();
                 break;
             case "wait":
-                Wait(Int32.Parse(instruction.variables[0]));
+                int timer = Int32.Parse(instruction.variables[0]);
+                StartCoroutine(Wait(timer));
                 break;
             case "playmusic":
                 bool loop = false;
@@ -92,9 +103,41 @@ public class GameManager : Singleton<GameManager>
             case "dialogue":
                 ShowDialogue(instruction.variables);
                 break;
+            case "closedialogue":
+                CloseDialogue();
+                break;
+            case "hotspot":
+                Hotspot(instruction.variables[0], instruction.variables[1], Int32.Parse(instruction.variables[2]), Int32.Parse(instruction.variables[3]));
+                break;
             default:
                 break;
         }
+    }
+
+
+    public TextAsset FindScriptFromName(string scriptName)
+    {
+        TextAsset result = scripts.FirstOrDefault(x => x.name == scriptName);
+        return result;
+    }
+    private void RunHotSpotDelegate(TextAsset script)
+    {
+        LoadScript(script);
+    }
+
+    private void Hotspot(string spriteTag, string scriptName, int x, int y)
+    {
+        Vector3 coordinates = new Vector3(x, y, 0f);
+
+        TextAsset script = FindScriptFromName(scriptName);
+
+        spriteManager.CreateHotspotSprite(spriteTag, script, coordinates);
+
+    }
+
+    private void CloseDialogue()
+    {
+        dialogueManager.HideDialogueBox();
     }
 
     private void ShowDialogue(string[] variables)
@@ -120,8 +163,9 @@ public class GameManager : Singleton<GameManager>
         audioManager.Play(songName);
     }
 
-    IEnumerable Wait(int seconds)
+    IEnumerator Wait(int seconds)
     {
+        //System.Threading.Thread.Sleep(seconds * 1000);
         yield return new WaitForSeconds(seconds);
     }
 
@@ -158,8 +202,6 @@ public class GameManager : Singleton<GameManager>
     private void SetDialogue(string name, string[] sentences)
     {
         Dialogue dialogue = new Dialogue(name, sentences);
-        dialogueTrigger.dialogue = dialogue;
-        dialogueTrigger.TriggerDialogue();
     }
 
     // Update is called once per frame
