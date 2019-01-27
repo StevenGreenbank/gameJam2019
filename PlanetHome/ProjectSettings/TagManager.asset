@@ -9,6 +9,10 @@ TagManager:
   - Spaceship
   - Mountains
   - BlackBox
+  - BlankBox
+  - CrashedShip
+  - FixedShip
+  - TitleScreen
   layers:
   - Default
   - TransparentFX
