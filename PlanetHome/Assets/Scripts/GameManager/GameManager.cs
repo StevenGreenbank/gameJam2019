@@ -12,6 +12,7 @@ public class GameManager : Singleton<GameManager>
     public BackgroundManager backgroundManager;
     public SpriteManager spriteManager;
     public AudioManager audioManager;
+    public VideoManager videoManager;
 
     // current script to load
     public TextAsset instructionsScript;
@@ -137,11 +138,19 @@ public class GameManager : Singleton<GameManager>
             case "if":
                 BranchStatement(instruction.variables[0], instruction.variables[1], instruction.variables[2]);
                 break;
+            case "playvideo":
+                PlayVideo(instruction.variables[0]);
+                break;
             default:
                 break;
         }
         if (runNextInstruction)
             RunScript();
+    }
+
+    private void PlayVideo(string videoName)
+    {
+        videoManager.PlayMovie(videoName);
     }
 
     private void RemoveUnusedBranchCommands()
