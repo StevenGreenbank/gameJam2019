@@ -1,2 +1,3 @@
 removeallsprites
+playsound~musalien1
 background~Jungle1
