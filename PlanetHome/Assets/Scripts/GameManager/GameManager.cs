@@ -53,7 +53,7 @@ public class GameManager : Singleton<GameManager>
         {
             if (line.Trim().Length > 0)
             {
-                string[] split = line.Split(',');
+                string[] split = line.Split('~');
                 string command = split[0].Trim();
                 var splitList = split.ToList().Select(x => x.Trim()).ToList();
                 splitList.RemoveAt(0);

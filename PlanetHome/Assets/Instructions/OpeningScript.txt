@@ -1,0 +1,8 @@
+background~ blackscreen
+dialogue~Narrator~ I only meant to check out this planet a little.  Maybe it was dumb of me to enter its atmosphere and look around, but I thought I could just be in and out.~Flying between mountains suspended in a weird gravity field, I currently think otherwise.
+dialogue~MC~"Come on, pull up!  Work!"
+dialogue~Narrator~I pull on the steering wheel and hit the thruster button.~Thunk.~My spacecraft knocks against a boulder floating in midair.~It suddenly feels a lot lighter.  Lighter and shakier and a lot harder to steer.  What'd I lose!?~I try and pull up, but I've lost control. It’s all I can do to try and land…~Another thunk.
+wait~3
+background~spaceship
+dialogue~MC~"Nnn..."
+dialogue~Narrator~It takes a while for me to get up. When I check the air levels, it looks safe enough to breathe, at least. With a groan, I pull myself out.

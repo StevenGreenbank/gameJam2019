@@ -68,7 +68,7 @@ public class DialogueManager : Singleton<DialogueManager>
         SetDialogueBoxState(false);
         isInDialogue = false;
         dialogueEnd?.Invoke();
-        dialogueEnd = null;
+       // dialogueEnd = null;
     }
 
     private void SetDialogueBoxState(bool active)
