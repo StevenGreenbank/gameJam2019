@@ -16,7 +16,7 @@ public class GameManager : Singleton<GameManager>
     public TextAsset instructionsScript;
     public TextAsset[] scripts;
     private string[] scriptLines;
-    private List<Instruction> instructions;
+    private Queue<Instruction> instructions;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,7 @@ public class GameManager : Singleton<GameManager>
     /// </summary>
     public void LoadScript(TextAsset script)
     {
-        instructions = new List<Instruction>();
+        instructions = new Queue<Instruction>();
         instructionsScript = script;
         // code to load a script from file
         string fs = instructionsScript.text;
@@ -52,7 +52,7 @@ public class GameManager : Singleton<GameManager>
                 var splitList = split.ToList().Select(x => x.Trim()).ToList();
                 splitList.RemoveAt(0);
                 split = splitList.ToArray();
-                instructions.Add(new Instruction(command, split));
+                instructions.Enqueue(new Instruction(command, split));
             }
         }
     }
@@ -62,14 +62,16 @@ public class GameManager : Singleton<GameManager>
     /// </summary>
     void RunScript()
     {
-        foreach(Instruction instruction in instructions)
+        if (instructions.Count > 0)
         {
+            Instruction instruction = instructions.Dequeue();
             RunInstruction(instruction);
         }
     }
 
     void RunInstruction(Instruction instruction)
     {
+        bool runNextInstruction = true;
         switch (instruction.command.ToLower())
         {
             case "background":
@@ -86,6 +88,7 @@ public class GameManager : Singleton<GameManager>
                 break;
             case "wait":
                 int timer = Int32.Parse(instruction.variables[0]);
+                runNextInstruction = false;
                 StartCoroutine(Wait(timer));
                 break;
             case "playmusic":
@@ -102,6 +105,7 @@ public class GameManager : Singleton<GameManager>
                 break;
             case "dialogue":
                 ShowDialogue(instruction.variables);
+                runNextInstruction = false;
                 break;
             case "closedialogue":
                 CloseDialogue();
@@ -112,6 +116,8 @@ public class GameManager : Singleton<GameManager>
             default:
                 break;
         }
+        if (runNextInstruction)
+            RunScript();
     }
 
 
@@ -145,6 +151,7 @@ public class GameManager : Singleton<GameManager>
         string name = variables[0];
         var trimmed = variables.ToList();
         trimmed.RemoveAt(0);
+        dialogueManager.dialogueEnd += RunScript;
         dialogueManager.StartDialogue(new Dialogue(name, trimmed.ToArray()));
     }
 
@@ -167,6 +174,7 @@ public class GameManager : Singleton<GameManager>
     {
         //System.Threading.Thread.Sleep(seconds * 1000);
         yield return new WaitForSeconds(seconds);
+        RunScript();
     }
 
     private void RemoveAllSprites()

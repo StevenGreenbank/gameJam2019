@@ -12,9 +12,13 @@ public class DialogueManager : Singleton<DialogueManager>
     public bool isInDialogue;
     public Dictionary<string, string> textStuff;
 
+    public  delegate void OnDialogueEnd();
+    public OnDialogueEnd dialogueEnd;
+
     void Start()
     {
         sentences = new Queue<string>();
+        
     }
 
     public void HideDialogueBox()
@@ -63,6 +67,8 @@ public class DialogueManager : Singleton<DialogueManager>
         Debug.Log("End of conversation");
         SetDialogueBoxState(false);
         isInDialogue = false;
+        dialogueEnd?.Invoke();
+        dialogueEnd = null;
     }
 
     private void SetDialogueBoxState(bool active)

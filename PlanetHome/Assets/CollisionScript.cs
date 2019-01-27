@@ -22,6 +22,8 @@ public class CollisionScript : MonoBehaviour
         Debug.Log("you clicked on this");
         if (funct != null)
             funct(script);
+        // remove delegate once it's been clicked on; can reset it with script if necessary
+        funct = null;
     }
 
     // Update is called once per frame
