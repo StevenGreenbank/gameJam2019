@@ -33,7 +33,6 @@ public class DialogueManager : Singleton<DialogueManager>
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Starting convo with " + dialogue.name);
         nameText.text = dialogue.name;
 
         SetDialogueBoxState(true);
@@ -54,12 +53,12 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         if (sentences.Count == 0)
         {
+            Debug.Log("end of dialogue reached");
             EndDialogue();
             return;
         }
         string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
-        Debug.Log(sentence);
     }
 
     public void EndDialogue()

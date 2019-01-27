@@ -6,3 +6,4 @@ wait~3
 background~spaceship
 dialogue~MC~"Nnn..."
 dialogue~Narrator~It takes a while for me to get up. When I check the air levels, it looks safe enough to breathe, at least. With a groan, I pull myself out.
+dialogue~Narrator~My ship’s a mess.~Okay, it was a mess before, but at least it could actually fly. Without the thruster that boulder knocked off, it’s not going to leave the ground, much less the planet.~Guess I can check this out…
