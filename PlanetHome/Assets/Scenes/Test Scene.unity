@@ -660,7 +660,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: bfd69625124bf2949a0dea738e369626, type: 3}
     volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     time: 0
@@ -1364,6 +1364,10 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 82a6c69f4affbad44bfbaba251a9e534, type: 3}
   - {fileID: 4900000, guid: 3d3f798cbde8bcb49a58e18494527394, type: 3}
   - {fileID: 4900000, guid: ffd2224899a76934985a37da6fbc7c92, type: 3}
+  - {fileID: 4900000, guid: 48fb2897543059547b97aec6a7c45fd3, type: 3}
+  - {fileID: 4900000, guid: 0a1e8afa06865a44ea1d3aa1702216ef, type: 3}
+  - {fileID: 4900000, guid: e3fc150e01e716e44b8ac64e4f053fda, type: 3}
+  - {fileID: 4900000, guid: 2365f443adce551448a698e9d883c023, type: 3}
 --- !u!4 &1223696066
 Transform:
   m_ObjectHideFlags: 0
@@ -1921,8 +1925,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85862ab28d2eff438e1a18c1cac0843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixerGroup: {fileID: 0}
-  sounds: []
+  mixerGroup: {fileID: 24300002, guid: ac07c00659b960c468f787d1b1c5634b, type: 2}
+  sounds:
+  - name: musalien1
+    clip: {fileID: 8300000, guid: c5d0ccbd5c66b074aa0d69b57d487ebf, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: musalien2
+    clip: {fileID: 8300000, guid: 2a3e6d174f97d3e4aa0acc078d9b92c5, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: musalien3
+    clip: {fileID: 8300000, guid: 0cce0dd711e8c6f4fb918797c114e1fb, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: musalien4
+    clip: {fileID: 8300000, guid: 425a18f040a8cbc49b7732a326bd7ef6, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: SHUT_UP
+    clip: {fileID: 8300000, guid: 38d684788a5ca11499606a097b8f4e66, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: musalien5
+    clip: {fileID: 8300000, guid: a49d71e2b2b8da84dbb467c92c4acfc0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &1972021728
 Transform:
   m_ObjectHideFlags: 0
