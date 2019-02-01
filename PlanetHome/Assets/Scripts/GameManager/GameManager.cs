@@ -101,7 +101,7 @@ public class GameManager : Singleton<GameManager>
                 RemoveAllSprites();
                 break;
             case "wait":
-                int timer = Int32.Parse(instruction.variables[0]);
+                float  timer = float.Parse(instruction.variables[0]);
                 runNextInstruction = false;
                 StartCoroutine(Wait(timer));
                 break;
@@ -289,7 +289,7 @@ public class GameManager : Singleton<GameManager>
         audioManager.Play(songName);
     }
 
-    IEnumerator Wait(int seconds)
+    IEnumerator Wait(float seconds)
     {
         //System.Threading.Thread.Sleep(seconds * 1000);
         yield return new WaitForSeconds(seconds);
