@@ -1,0 +1,11 @@
+add~caveInit~0
+if~caveInit~=~0
+set~rune1active~0
+set~rune2active~0
+set~rune3active~0
+set~rune4active~0
+set~rune5active~0
+set~runeSum~0
+set~caveInit~1
+end
+loadscript~CaveSectionPart1

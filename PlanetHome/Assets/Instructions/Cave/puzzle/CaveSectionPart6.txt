@@ -1,0 +1,7 @@
+set~rune5active~1
+removeallsprites
+closedialogue
+background~Rune5
+playsound~RUNE_ACTIVATE
+wait~2
+loadscript~CaveSectionPart1

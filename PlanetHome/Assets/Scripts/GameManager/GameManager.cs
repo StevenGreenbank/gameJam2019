@@ -131,10 +131,10 @@ public class GameManager : Singleton<GameManager>
                 SetValue(instruction.variables[0], Int32.Parse(instruction.variables[1]));
                 break;
             case "add":
-                AddValue(instruction.variables[0], Int32.Parse(instruction.variables[1]));
+                AddValue(instruction.variables[0], instruction.variables[1]);
                 break;
             case "subtract":
-                SubtractValue(instruction.variables[0], Int32.Parse(instruction.variables[1]));
+                SubtractValue(instruction.variables[0], instruction.variables[1]);
                 break;
             case "if":
                 BranchStatement(instruction.variables[0], instruction.variables[1], instruction.variables[2]);
@@ -206,8 +206,13 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    private void SubtractValue(string key, int value)
+    private void SubtractValue(string key, string strValue)
     {
+        int value;
+        if (!Int32.TryParse(strValue, out value))
+        {
+            value = gameValues[strValue];
+        }
         if (gameValues.ContainsKey(key))
         {
             gameValues[key] = gameValues[key] - value;
@@ -216,14 +221,21 @@ public class GameManager : Singleton<GameManager>
             throw new Exception("Key " + key + " not found");
     }
 
-    private void AddValue(string key, int value)
+    private void AddValue(string key, string strValue)
     {
+        int value;
+        if (!Int32.TryParse(strValue, out value))
+        {
+            value = gameValues[strValue];
+        }
         if (gameValues.ContainsKey(key))
-        { 
+        {
             gameValues[key] = gameValues[key] + value;
         }
         else
-            throw new Exception("Key " + key + " not found");
+        {
+            gameValues[key] = value;
+        }
     }
 
     private void SetValue(string key, int value)
@@ -234,7 +246,7 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
-            gameValues.Add(key, value);
+            gameValues[key] = value;
         }
     }
 

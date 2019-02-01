@@ -1,7 +1,7 @@
+set~rune1active~1
 removeallsprites
 closedialogue
 background~Rune1
 playsound~RUNE_ACTIVATE
 wait~2
-background~Rune0
-hotspot~BlackBox~CaveSectionPart3~4.66~-3.79
+loadscript~CaveSectionPart1

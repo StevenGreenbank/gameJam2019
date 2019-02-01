@@ -1,0 +1,16 @@
+if~rune1active~=~0
+hotspot~BlackBox~CaveSectionPart2~-8.03~-2.83
+end
+if~rune2active~=~0
+hotspot~BlackBox~CaveSectionPart3~4.66~-3.79
+end
+if~rune3active~=~0
+hotspot~BlackBox~CaveSectionPart4~7.08~0.82
+end
+if~rune4active~=~0
+hotspot~BlackBox~CaveSectionPart5~5.16~2.92
+end
+if~rune5active~=~0
+hotspot~BlackBox~CaveSectionPart6~1.6~2.78
+end
+

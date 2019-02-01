@@ -1032,6 +1032,8 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 73a95ab28de39944187f51c620c7a18e, type: 3}
   - {fileID: 4900000, guid: 87d026be034366a48b1a2a93632322b5, type: 3}
   - {fileID: 4900000, guid: 114812a4507b5d148839f2c1a8d90bc7, type: 3}
+  - {fileID: 4900000, guid: 96860567a475da2469d6f2feea988150, type: 3}
+  - {fileID: 4900000, guid: e4a175604c0ef00488a68d998b25dcf8, type: 3}
 --- !u!4 &1223696066
 Transform:
   m_ObjectHideFlags: 0
@@ -1154,7 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef63d8a494ef70e4592e4347848bc189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScript: {fileID: 4900000, guid: 721835a5facf53b41bbb1e50c57f5e45, type: 3}
+  startScript: {fileID: 4900000, guid: 96860567a475da2469d6f2feea988150, type: 3}
   gm: {fileID: 1223696065}
 --- !u!4 &1596060089
 Transform:

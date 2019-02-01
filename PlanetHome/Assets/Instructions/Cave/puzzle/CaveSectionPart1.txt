@@ -1,0 +1,17 @@
+background~Rune0
+add~runeSum~rune1active
+add~runeSum~rune2active
+add~runeSum~rune3active
+add~runeSum~rune4active
+add~runeSum~rune5active
+if~runeSum~=~5
+set~runeSum~0
+loadscript~SkySectionPart1
+else
+removeallsprites
+closedialogue
+background~Rune0
+set~runeSum~0
+loadscript~CavePlaceHotBoxes
+end
+

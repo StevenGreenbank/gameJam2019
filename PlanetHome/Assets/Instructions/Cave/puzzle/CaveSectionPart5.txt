@@ -1,7 +1,7 @@
+set~rune4active~1
 removeallsprites
 closedialogue
-background~Rune5
+background~Rune4
 playsound~RUNE_ACTIVATE
 wait~2
-background~Rune0
-loadscript~SkySectionPart1
+loadscript~CaveSectionPart1
