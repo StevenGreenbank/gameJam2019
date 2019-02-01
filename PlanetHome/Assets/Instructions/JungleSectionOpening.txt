@@ -1,0 +1,22 @@
+playmusic~JUNGLE_SONG
+background~Kasma_Empty
+Dialogue~MC~If anything fell off, it’s probably in a place like this.~The jungle looks denser the further I step into it. The foliage is thick and covers everywhere I can see.
+Playsound~RUSTLE
+Dialogue~MC~The leaves look different, feel different… Wait, should I be touching these without knowing if they’ll kill me or not?
+PlaySound~Kasma_Hey
+Dialogue~Someone~ “Hey.”
+Dialogue~MC~I stand up straight.
+Dialogue~MC~“Who --”
+background~Kasma_Default
+Dialogue~Kasma ~“Sorry, didn’t mean to scare you. You don’t exactly look like a local.”
+Dialogue~MC~“Not exactly. My ship crashed around here, and I’m looking for some missing parts.”
+PlaySound~Kasma_Names-Kasma
+Dialogue~Kasma~“Join the club. Name’s Kasma Naria, alternative artiste. I came out here looking for inspiration. Now I’m just looking for the paint tube I dropped. Can’t draw the loomanlah leaves without deep cerulegreen.”
+Dialogue~MC ~“Cerulewhat?”
+Dialogue~Kasma~“It’s a specific shade of teal. You know, like how that pale shade of orange, this one here, is called lyaomyt because of the fruit.”
+Dialogue~MC ~“I think we call that pumpkin where I come from.”
+Dialogue~Kasma~“That sounds like a disease.”
+Dialogue~MC~“...You might have a point. Hey, since we’re both looking for something, I’ll help you search.”
+PlaySound~Kasma_Thanks
+Dialogue~Kasma~“Thanks. It’s got to be around here.”
+loadscript~JungleSectionPart1
