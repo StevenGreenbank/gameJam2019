@@ -2,4 +2,4 @@ removeallsprites
 closedialogue
 playmusic~JUNGLE_SONG
 background~Jungle0
-hotspot~BlackBox~JungleTestPart2~2.55~-3.77
+hotspot~BlackBox~JungleSectionPart2~2.55~-3.77

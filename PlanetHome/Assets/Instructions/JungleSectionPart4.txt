@@ -2,4 +2,4 @@ removeallsprites
 closedialogue
 playsound~musalien3
 background~Jungle3
-hotspot~BlackBox~JungleTestPart5~6.29~0.26
+hotspot~BlackBox~JungleSectionPart5~6.29~0.26
