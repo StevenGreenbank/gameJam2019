@@ -456,209 +456,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 0}
   sounds:
-  - name: Ayzax_A-true-adventurer
-    clip: {fileID: 8300000, guid: 18f475f4d56dc024da380140af09b635, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Ayzax_Hello
-    clip: {fileID: 8300000, guid: a12ff6e970301904da47113cdb61eb97, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Ayzax_I-m-Ayzax
-    clip: {fileID: 8300000, guid: 3da9a9dd7a0c1db448dcf8277b803ca5, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Ayzax_Thank-you
-    clip: {fileID: 8300000, guid: 0714825dbb4c3744eaae44721017524c, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Ayzax_Unfortunately
-    clip: {fileID: 8300000, guid: e08c3a1593f8db34aae29baf6d9ffece, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Ayzax_You-will-prevail
-    clip: {fileID: 8300000, guid: 14825d7f3a4a82d4386d84b685f4bee0, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Gloonk_Hi
-    clip: {fileID: 8300000, guid: 8f2247e08f9a2534bb87f1e5e753a1e0, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Gloonk_I-can-help
-    clip: {fileID: 8300000, guid: 99f0586c61299d54194148513ab9f5ca, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Gloonk_I-m-Gloonk
-    clip: {fileID: 8300000, guid: 510844ca5aaddac4f981c87deeb0bec5, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Gloonk_That-must-be-it
-    clip: {fileID: 8300000, guid: d25f19a4b69affb49a1778b055590d8a, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Gloonk_you-ll-do-fine
-    clip: {fileID: 8300000, guid: 1a6f3b66293a4d048a92236cb2647a09, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Don-t-Worry
-    clip: {fileID: 8300000, guid: 86f374542321e1140b6068f3b718ae69, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Here-you-go
-    clip: {fileID: 8300000, guid: eb0f306c39e8d5e4695bcf22df6cf2ba, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Hey
-    clip: {fileID: 8300000, guid: d8d2ae83204e6d942b839172357b7e7a, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Hey-check-this-out
-    clip: {fileID: 8300000, guid: 09051a6f9d7f1c347864ac2573f900ad, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Names-Kasma
-    clip: {fileID: 8300000, guid: 0b79bd6bc38dffe41a254c4cb06ee201, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Revolution
-    clip: {fileID: 8300000, guid: 0027645d34cbed248a79ea61d0a860de, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Sorry
-    clip: {fileID: 8300000, guid: 831974ea03cdd0c48abeb8dbb8485a76, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Thanks
-    clip: {fileID: 8300000, guid: b46f0405730a5e6488b12c531a4be489, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Kasma_Who-Cares
-    clip: {fileID: 8300000, guid: 29879f40edc101a4c830760591cc3ec1, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
   - name: JUNGLE_SONG
     clip: {fileID: 8300000, guid: bfd69625124bf2949a0dea738e369626, type: 3}
-    volume: 1
+    volume: 0.1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -670,7 +470,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: a7ac3ee9a7844514296c7ca0638be2c5, type: 3}
     volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     time: 0
@@ -680,7 +480,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: aafd643ee9d285042b7b97b8f7be28f5, type: 3}
     volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     time: 0
@@ -690,157 +490,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: bc15856929fbcd646818b993814ac32d, type: 3}
     volume: 1
     volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: musalien1
-    clip: {fileID: 8300000, guid: c5d0ccbd5c66b074aa0d69b57d487ebf, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: musalien2
-    clip: {fileID: 8300000, guid: 2a3e6d174f97d3e4aa0acc078d9b92c5, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: musalien3
-    clip: {fileID: 8300000, guid: 0cce0dd711e8c6f4fb918797c114e1fb, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: musalien4
-    clip: {fileID: 8300000, guid: 425a18f040a8cbc49b7732a326bd7ef6, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: musalien5
-    clip: {fileID: 8300000, guid: a49d71e2b2b8da84dbb467c92c4acfc0, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: DINO-HEY
-    clip: {fileID: 8300000, guid: 593fae44fa244a849aa5cdd4cd574244, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: DINO-LAUGH
-    clip: {fileID: 8300000, guid: 8a5284c7ada029e4db47dd40ead31fda, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: FIND_ITEM
-    clip: {fileID: 8300000, guid: 6528a06a87c74784aaa8e3cf518524c3, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: GLUB
-    clip: {fileID: 8300000, guid: bd5a66f2da4470a438cbd4a7eb6e3fea, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: OOPS
-    clip: {fileID: 8300000, guid: 48c41378706cfee4eaa44eeaa50dd1fe, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: RUNE_ACTIVATE
-    clip: {fileID: 8300000, guid: 9fa6fec12cd08974fa6f3cdf496a3525, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: RUSTLE
-    clip: {fileID: 8300000, guid: e99b72f125c57fe4d91202ac8b7d2e59, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: SHIP_BLASTAWAY
-    clip: {fileID: 8300000, guid: 9c88ce497804c4f4c8ca3725207683b2, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: THUNK
-    clip: {fileID: 8300000, guid: 067b122a8bd56b146b51d9252a86e5bb, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
-    loop: 0
-    time: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: DINO-HEY
-    clip: {fileID: 8300000, guid: 593fae44fa244a849aa5cdd4cd574244, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     time: 0
@@ -1927,6 +1577,306 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 24300002, guid: ac07c00659b960c468f787d1b1c5634b, type: 2}
   sounds:
+  - name: Ayzax_A-true-adventurer
+    clip: {fileID: 8300000, guid: 18f475f4d56dc024da380140af09b635, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_Hello
+    clip: {fileID: 8300000, guid: a12ff6e970301904da47113cdb61eb97, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_I-m-Ayzax
+    clip: {fileID: 8300000, guid: 3da9a9dd7a0c1db448dcf8277b803ca5, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_Thank-you
+    clip: {fileID: 8300000, guid: 0714825dbb4c3744eaae44721017524c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_Unfortunately
+    clip: {fileID: 8300000, guid: e08c3a1593f8db34aae29baf6d9ffece, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ayzax_You-will-prevail
+    clip: {fileID: 8300000, guid: 14825d7f3a4a82d4386d84b685f4bee0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_Hi
+    clip: {fileID: 8300000, guid: 8f2247e08f9a2534bb87f1e5e753a1e0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_I-can-help
+    clip: {fileID: 8300000, guid: 99f0586c61299d54194148513ab9f5ca, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_I-m-Gloonk
+    clip: {fileID: 8300000, guid: 510844ca5aaddac4f981c87deeb0bec5, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_That-must-be-it
+    clip: {fileID: 8300000, guid: d25f19a4b69affb49a1778b055590d8a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_you-ll-do-fine
+    clip: {fileID: 8300000, guid: 1a6f3b66293a4d048a92236cb2647a09, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Don-t-Worry
+    clip: {fileID: 8300000, guid: 86f374542321e1140b6068f3b718ae69, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Here-you-go
+    clip: {fileID: 8300000, guid: eb0f306c39e8d5e4695bcf22df6cf2ba, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Hey
+    clip: {fileID: 8300000, guid: d8d2ae83204e6d942b839172357b7e7a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Hey-check-this-out
+    clip: {fileID: 8300000, guid: 09051a6f9d7f1c347864ac2573f900ad, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Names-Kasma
+    clip: {fileID: 8300000, guid: 0b79bd6bc38dffe41a254c4cb06ee201, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Revolution
+    clip: {fileID: 8300000, guid: 0027645d34cbed248a79ea61d0a860de, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Sorry
+    clip: {fileID: 8300000, guid: 831974ea03cdd0c48abeb8dbb8485a76, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Thanks
+    clip: {fileID: 8300000, guid: b46f0405730a5e6488b12c531a4be489, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Kasma_Who-Cares
+    clip: {fileID: 8300000, guid: 29879f40edc101a4c830760591cc3ec1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DINO-HEY
+    clip: {fileID: 8300000, guid: 593fae44fa244a849aa5cdd4cd574244, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DINO-LAUGH
+    clip: {fileID: 8300000, guid: 8a5284c7ada029e4db47dd40ead31fda, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: FIND_ITEM
+    clip: {fileID: 8300000, guid: 6528a06a87c74784aaa8e3cf518524c3, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: GLUB
+    clip: {fileID: 8300000, guid: bd5a66f2da4470a438cbd4a7eb6e3fea, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: OOPS
+    clip: {fileID: 8300000, guid: 48c41378706cfee4eaa44eeaa50dd1fe, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: RUNE_ACTIVATE
+    clip: {fileID: 8300000, guid: 9fa6fec12cd08974fa6f3cdf496a3525, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: RUSTLE
+    clip: {fileID: 8300000, guid: e99b72f125c57fe4d91202ac8b7d2e59, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: SHIP_BLASTAWAY
+    clip: {fileID: 8300000, guid: 9c88ce497804c4f4c8ca3725207683b2, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: THUNK
+    clip: {fileID: 8300000, guid: 067b122a8bd56b146b51d9252a86e5bb, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DINO-HEY
+    clip: {fileID: 8300000, guid: 593fae44fa244a849aa5cdd4cd574244, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
   - name: musalien1
     clip: {fileID: 8300000, guid: c5d0ccbd5c66b074aa0d69b57d487ebf, type: 3}
     volume: 1
