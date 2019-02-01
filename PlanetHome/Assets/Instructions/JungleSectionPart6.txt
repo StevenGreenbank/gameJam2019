@@ -6,5 +6,4 @@ wait~0.75
 playsound~SHUT_UP
 background~Jungle6
 dialogue~Narrator~Playing with the creatures was fun, but the big guy was angry and sleepy!~When he came out to yell at us to shut up a part of my ship came out of his hole.~I grabbed it and ran away...
-dialogue~Narrator~To be continued...
-background~fixedship
+loadscript~JungleSectionResolution
