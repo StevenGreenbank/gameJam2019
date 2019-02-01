@@ -1,0 +1,4 @@
+removeallsprites
+closedialogue
+background~Rune0
+hotspot~BlackBox~CaveSectionPart2~-8.03~-2.83

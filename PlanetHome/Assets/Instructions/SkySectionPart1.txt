@@ -1,0 +1,2 @@
+background~Sky0
+hotspot~BlackBox~SkySectionPart2~7.09~0.8

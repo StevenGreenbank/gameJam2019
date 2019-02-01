@@ -12,3 +12,4 @@ Dialogue~Kasma~“You think this’ll help with your ship?”
 Dialogue~MC~“Yeah, that’s perfect. That’ll help me send and receive data.”
 Playsound~Kasma_Here-you-go
 Dialogue~Kasma~“Great! Here you go, it’s only fair. I don’t see the other things you mentioned here, though.”
+Loadscript~CaveSectionPart1

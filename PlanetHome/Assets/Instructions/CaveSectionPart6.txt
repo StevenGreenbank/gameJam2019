@@ -1,0 +1,7 @@
+removeallsprites
+closedialogue
+background~Rune5
+playsound~RUNE_ACTIVATE
+wait~2
+background~Rune0
+loadscript~SkySectionPart1

@@ -1,0 +1,3 @@
+removeallsprites
+closedialogue
+hotspot~BlackBox~SkySectionPart5~1.85~-2.06

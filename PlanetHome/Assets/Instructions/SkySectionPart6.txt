@@ -1,0 +1,3 @@
+removeallsprites
+closedialogue
+loadscript~SkySectionPart1
