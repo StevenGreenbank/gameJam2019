@@ -1,3 +1,5 @@
 removeallsprites
 closedialogue
-hotspot~BlackBox~SkySectionPart5~1.85~-2.06
+background~Sky3
+set~skyHotPoint3~1
+loadScript~SkySectionPart1

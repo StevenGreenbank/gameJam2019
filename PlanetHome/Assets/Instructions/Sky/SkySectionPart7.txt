@@ -1,5 +1,5 @@
 removeallsprites
 closedialogue
-background~Sky1
-set~skyHotPoint1~1
+background~Sky4
+set~skyHotPoint4~1
 loadScript~SkySectionPart1

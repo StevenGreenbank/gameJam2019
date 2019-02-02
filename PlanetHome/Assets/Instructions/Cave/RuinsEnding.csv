@@ -1,0 +1,17 @@
+background~Gloonk_Default
+Dialogue~MC~“Looks like this is the one.”
+Playsound~Gloonk_That-must-be-it
+Dialogue~Gloonk~“That must be it! We’ll get right on trying to translate the full set.”
+Dialogue~Gloonk~“While you were looking, I found some other things. Maybe one of them will help you.”
+Dialogue~Gloonk~“Your ship must be different from ours, but even the lost technology in the caves has some similarities to other ships we’ve seen.”
+Dialogue~MC~“I can check it out. What are they?”
+Dialogue~Gloonk~“You mentioned your gravity engine wasn’t working, didn’t you?”
+Dialogue~Gloonk~“We’ve been looking into the ancients and what they were studying, and they based a lot of the lost technology on the gravity field in the floating rock range.”
+Dialogue~MC~“Do you think it’ll work with my ship?”
+Playsound~Gloonk_I-can-help
+Dialogue~Gloonk~“I can help you with that! I’ve studied these a lot, and I’d love to work with a new setup like an alien ship. Oh, right. I guess I’m the alien here.
+Dialogue~MC~“Sounds like a lot. Thanks, I’m counting on you.”
+Dialogue~MC~“I just need to finish finding the parts. Can you come by the edge of the jungle later? That’s sort of where I crashed.”
+Dialogue~Gloonk~“I’ll be right there after I finish my work.”
+stopmusic~RUINS_SONG
+loadscript~SkySectionOpening

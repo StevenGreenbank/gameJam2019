@@ -1,0 +1,18 @@
+playmusic~RUINS_SONG
+Dialogue~MC~("I won’t lie, the cave is creeping me out a little. Still, it’s got a sign out front in an alien language and a few tools outside, so at least it looks like there are people working in there. No lights hung up, though. As soon as I get deep enough in, I can see why. The mosses and fungi growing in the cave are giving off their own light. It’s still dim, but bright enough to see for the workers inside. Some of them are working on machines, while most are inspecting… something. Someone looks over at me. I can’t help but stare a little. This one looks kind of creepy with the permanent stare, but I guess that’s just their face." )
+background~Gloonk_Empty
+Playsound~Gloonk_Hi
+Dialogue~Someone~“Uh, hi.”
+Dialogue~MC~“Whoa. Talk about soft-spoken. I imagined this booming bodybuilder voice, not a normal person shuffling around whispering like a kid on their first day of school.”
+Dialogue~MC~“I mean, hi. This sounds ridiculous, but I sort of crashed around here and I’m looking for some parts to fix my ship. The thruster came off and the antenna and gravity engine are write-offs.”
+Playsound~Gloonk_I-m-Gloonk
+background~Gloonk_Default
+Dialogue~Gloonk~“Fixing, I can do. My name is Shubu, but everyone calls me by my last name, Gloonk. I’m an engineer with this research expedition.”
+Dialogue~MC~“What are you researching?”
+Dialogue~Gloonk~“The ruins here are from this ancient cave civilization, before our people came out from underground. We’re trying to unearth a set of tablets, but this cave creature messed up our dig site, and we can’t get at the last one.”
+Dialogue~MC~“I can help. What do you know about it?”
+Dialogue~Gloonk~“I know it just started causing trouble when we started work around this wall.”
+Dialogue~MC~“Got it. I’m already looking for parts, anyway, and if you could use the help, I’ll check it out.”
+Playsound~Gloonk_I-d-be-grateful
+Dialogue~Gloonk~“I’d be very grateful.”
+loadscript~CavePuzzleInit

@@ -1,0 +1,12 @@
+if~skyHotPoint1~=~0
+hotspot~BlackBox~SkySectionPart2~7.09~0.8
+end
+if~skyHotPoint2~=~0
+hotspot~BlackBox~SkySectionPart3~-6.15~3.43
+end
+if~skyHotPoint3~=~0
+hotspot~BlackBox~SkySectionPart4~-1.56~-3.96
+end
+if~skyHotPoint4~=~0
+hotspot~BlackBox~SkySectionPart7~1.85~-2.06
+end

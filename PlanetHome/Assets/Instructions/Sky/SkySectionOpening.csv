@@ -1,0 +1,19 @@
+playmusic~MOUNTAINS_SONG
+background~Ayzax_Empty
+Dialogue~MC~Here’s where I managed to knock off the thruster. It’s probably fallen around here somewhere.~If I get it back, I can try to reattach it. Might need some help, though.~How are these rocks here floating in the air? Whatever’s keeping this gravity field, it’s amazing. People on Earth would love this.~Right. Thruster. Someone here must have seen it.
+Playsound~Ayzax_Hello
+Dialogue~Someone~“HELLOOOOOOOO!”
+Dialogue~MC~“Wha!? And there’s this guy, right in my face. He looks like a noodle-fingered T.rex, and a… very excitable one.”
+Playsound~Ayzax_I-m-Ayzax
+background~Ayzax_Default
+Dialogue~Ayzax~“You must be new around here! Or… are you an alien!? A mysterious discovery found by Ayzax, the Legendary Adventurer!”
+Dialogue~Ayzax~“To be. I’m not legendary yet, but I’m sure to be one of these days.”
+Dialogue~Ayzax~“It’s a floating rock range! Great for exploring and climbing to see what you can see!”
+Dialogue~MC~“I sort of am an alien. I crash-landed around here after one of the thrusters got knocked off my ship in this… mountain range?”
+Dialogue~Ayzax~“...Also for losing things. But not to worry! I’ll find the book I dropped, just like you’ll find your spaceship part!”
+Dialogue~MC~“A book?”
+Playsound~Ayzax_Unfortunately
+Dialogue~Ayzax~“I lost it in the vines hanging from the mountains. Unfortunately… The nuisance up there stole it! Despite my most valiant efforts, he won’t give it up.”
+Dialogue~MC~“I can see what I can do.”
+Dialogue~Ayzax~“Then I’ll help you too! This is all part of ADVENTURING!”
+loadscript~SkySectionPart1

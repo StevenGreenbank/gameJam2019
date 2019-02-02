@@ -6,7 +6,7 @@ add~runeSum~rune4active
 add~runeSum~rune5active
 if~runeSum~=~5
 set~runeSum~0
-loadscript~SkySectionPart1
+loadscript~RuinsEnding
 else
 removeallsprites
 closedialogue

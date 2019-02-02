@@ -1,0 +1,24 @@
+background~Ayzax_Default
+dialogue~Ayzax~“Look what I found!”
+dialogue~MC~He’s lugging the damaged thruster up, leaping from boulder to boulder. I can’t help but stare.
+comment~(Get THRUSTER)
+dialogue~MC~“Whoa.”
+dialogue~Ayzax~“I know! I can’t believe it was right there!”
+dialogue~MC~“I think it’ll still work with some repairs, too. Thanks.”
+dialogue~MC~“Is this your book?”
+dialogue~Ayzax~“Yes! I’ve been working hard on it. Every adventurer needs a logbook!”
+dialogue~Ayzax~“Feel free to look at my discoveries!”
+dialogue~MC~I open the book.
+comment~(Open book appears in lieu of dialogue. It’s full of crappy drawings about “great discoveries” like “this rock tastes like soap” and “swinging from vines is really cool.”)
+dialogue~MC~“I’m speechless.”
+dialogue~Ayzax~“Thank you! Oh, since I’m an explorer, I can help you get some food for your journey back, too!”
+dialogue~MC~“Really? That’s nice of you.”
+dialogue~MC~I have to admit, my Earth food has been running out. I ate all the good stuff first and now I’m down to breakfast bars, protein powder, and dried bananas.
+dialogue~Ayzax~“Just let me know what you need!”
+comment~-If you have the other two items already:
+dialogue~MC~“I think that’s everything. Can you help me get that back to the ship?”
+dialogue~Ayzax~“Of course! Lead the way!”
+comment~-If you don’t have all the other items yet:
+comment~--MC~“I still need to look around some more.”
+comment~--Ayzax~“That’s fine! I can just get this back to your ship! Adventurer, away!” 
+stopmusic~MOUNTAINS_SONG

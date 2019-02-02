@@ -81,6 +81,8 @@ public class GameManager : Singleton<GameManager>
         bool runNextInstruction = true;
         switch (instruction.command.ToLower())
         {
+            case "comment":
+                break;
             case "else":
                 RemoveUnusedBranchCommands();
                 break;
@@ -285,6 +287,8 @@ public class GameManager : Singleton<GameManager>
             dialogueManager.dialogueEnd += RunScript;
         dialogueManager.StartDialogue(new Dialogue(name, trimmed.ToArray()));
     }
+
+
 
     private void StopMusic(string musicTag)
     {

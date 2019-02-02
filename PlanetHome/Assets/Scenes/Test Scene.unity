@@ -462,37 +462,37 @@ MonoBehaviour:
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     time: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: MAIN_AREA_SONG
     clip: {fileID: 8300000, guid: a7ac3ee9a7844514296c7ca0638be2c5, type: 3}
-    volume: 1
+    volume: 0.1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     time: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: MOUNTAINS_SONG
     clip: {fileID: 8300000, guid: aafd643ee9d285042b7b97b8f7be28f5, type: 3}
-    volume: 1
+    volume: 0.1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     time: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: RUINS_SONG
     clip: {fileID: 8300000, guid: bc15856929fbcd646818b993814ac32d, type: 3}
-    volume: 1
+    volume: 0.1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     time: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -1010,8 +1010,6 @@ MonoBehaviour:
   soundManager: {fileID: 1972021727}
   instructionsScript: {fileID: 0}
   scripts:
-  - {fileID: 4900000, guid: 8d4038a895a4b0446828069b2c50b07e, type: 3}
-  - {fileID: 4900000, guid: 82a6c69f4affbad44bfbaba251a9e534, type: 3}
   - {fileID: 4900000, guid: 3d3f798cbde8bcb49a58e18494527394, type: 3}
   - {fileID: 4900000, guid: 1a0c73b777d699243b5ed1d136b38039, type: 3}
   - {fileID: 4900000, guid: 20d9fbf70204f1c418dfdbd24cc00cbe, type: 3}
@@ -1026,14 +1024,22 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 604b7d9155749364f95cd9efe08d2cdc, type: 3}
   - {fileID: 4900000, guid: 2bea26495565ad642abec9f893420e15, type: 3}
   - {fileID: 4900000, guid: 2b0447d051c3a8d45a92d502a8f0312c, type: 3}
+  - {fileID: 4900000, guid: 96860567a475da2469d6f2feea988150, type: 3}
+  - {fileID: 4900000, guid: e4a175604c0ef00488a68d998b25dcf8, type: 3}
+  - {fileID: 4900000, guid: e18712ab5f423e941a06d9aa46384572, type: 3}
+  - {fileID: 4900000, guid: df33d2c3322c91249a151b1190de8cde, type: 3}
+  - {fileID: 4900000, guid: 70840e30a90244946bb10a85ac8b15d4, type: 3}
+  - {fileID: 4900000, guid: a486e25f1598da345b5c4ca4d5d6f10e, type: 3}
   - {fileID: 4900000, guid: 377fd2e8351db754eafd196914934d06, type: 3}
   - {fileID: 4900000, guid: d7d556608b405264c99129738807cc50, type: 3}
   - {fileID: 4900000, guid: ed35f85393e35724da645dd57fc86979, type: 3}
   - {fileID: 4900000, guid: 73a95ab28de39944187f51c620c7a18e, type: 3}
   - {fileID: 4900000, guid: 87d026be034366a48b1a2a93632322b5, type: 3}
   - {fileID: 4900000, guid: 114812a4507b5d148839f2c1a8d90bc7, type: 3}
-  - {fileID: 4900000, guid: 96860567a475da2469d6f2feea988150, type: 3}
-  - {fileID: 4900000, guid: e4a175604c0ef00488a68d998b25dcf8, type: 3}
+  - {fileID: 4900000, guid: cf7e472ed20912c47a5be8be5c1bacc3, type: 3}
+  - {fileID: 4900000, guid: 133ee80910d759e4e92afd6aebb5f2dd, type: 3}
+  - {fileID: 4900000, guid: 8d4038a895a4b0446828069b2c50b07e, type: 3}
+  - {fileID: 4900000, guid: 82a6c69f4affbad44bfbaba251a9e534, type: 3}
 --- !u!4 &1223696066
 Transform:
   m_ObjectHideFlags: 0
@@ -1156,7 +1162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef63d8a494ef70e4592e4347848bc189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScript: {fileID: 4900000, guid: 96860567a475da2469d6f2feea988150, type: 3}
+  startScript: {fileID: 4900000, guid: 721835a5facf53b41bbb1e50c57f5e45, type: 3}
   gm: {fileID: 1223696065}
 --- !u!4 &1596060089
 Transform:
@@ -1407,6 +1413,8 @@ MonoBehaviour:
   - {fileID: 4061457419064428696, guid: 06bf36c1f2ed7d2459ef537eb34aed2d, type: 3}
   - {fileID: 1772769952567583228, guid: 023ff74d8b34ee64da5ac2962090ee3c, type: 3}
   - {fileID: 3119745392543039441, guid: da686192dc61abb419e789eead9d2f7f, type: 3}
+  - {fileID: 5546779057315075557, guid: 37af2fc435d8f1b4e889ed16081ec497, type: 3}
+  - {fileID: 3164830365547496431, guid: f9fc55f4f4f191b429530c9b28d553df, type: 3}
 --- !u!4 &1724932754
 Transform:
   m_ObjectHideFlags: 0
@@ -1859,7 +1867,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: RUSTLE
     clip: {fileID: 8300000, guid: e99b72f125c57fe4d91202ac8b7d2e59, type: 3}
-    volume: 1
+    volume: 0.193
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -1949,6 +1957,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: musalien5
     clip: {fileID: 8300000, guid: a49d71e2b2b8da84dbb467c92c4acfc0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    time: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gloonk_I-m-Gloonk
+    clip: {fileID: 8300000, guid: 510844ca5aaddac4f981c87deeb0bec5, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
