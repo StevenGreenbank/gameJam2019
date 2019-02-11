@@ -1,5 +1,6 @@
 removeallsprites
 closedialogue
 background~Sky1
+playsound~DINO-HEY
 set~skyHotPoint1~1
 loadScript~SkySectionPart1

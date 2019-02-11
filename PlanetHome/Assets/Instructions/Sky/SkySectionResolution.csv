@@ -22,3 +22,4 @@ comment~-If you don’t have all the other items yet:
 comment~--MC~“I still need to look around some more.”
 comment~--Ayzax~“That’s fine! I can just get this back to your ship! Adventurer, away!” 
 stopmusic~MOUNTAINS_SONG
+loadscript~EndingScript

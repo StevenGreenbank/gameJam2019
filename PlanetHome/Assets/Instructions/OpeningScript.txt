@@ -2,13 +2,19 @@ background~titlescreen
 closedialogue
 wait~5
 background~ blackscreen
-dialogue~Narrator~ I thought I’d just taken a little damage when I spiralled towards this planet. I figured I could just land, check it out, and get back out again.~Flying between mountains suspended in a weird gravity field, I currently think otherwise.
+dialogue~MC~ I thought I’d just taken a little damage when I spiralled towards this planet. I figured I could just land, check it out, and get back out again.~Flying between mountains suspended in a weird gravity field, I currently think otherwise.
 dialogue~MC~"Come on, pull up!  Work!"
-dialogue~Narrator~I pull on the steering wheel and hit the thruster button.~Thunk.~My spacecraft knocks against a boulder floating in midair.~It suddenly feels a lot lighter.  Lighter and shakier and a lot harder to steer.  What'd I lose!?~I try and pull up, but I've lost control. It’s all I can do to try and land…~Another thunk.
-wait~3
+dialogue~MC~I pull on the steering wheel and hit the thruster button.
+playsound~THUNK
+dialogue~MC~*Thunk*~My spacecraft knocks against a boulder floating in midair.~It suddenly feels a lot lighter.  Lighter and shakier and a lot harder to steer.  What'd I lose!?~I try and pull up, but I've lost control. It’s all I can do to try and land…
+playsound~THUNK
+Dialogue~MC~Another thunk.
+wait~1
+playmusic~MAIN_AREA_SONG
 background~crashedship
 dialogue~MC~"Nnn..."
-dialogue~Narrator~It takes a while for me to get up. When I check the air levels, it looks safe enough to breathe, at least. With a groan, I pull myself out.
-dialogue~Narrator~My ship’s a mess.~Okay, it was a mess before, but at least it could actually fly. Without the thruster that boulder knocked off, it’s not going to leave the ground, much less the planet.~Guess I can check this out…
+dialogue~MC~It takes a while for me to get up. When I check the air levels, it looks safe enough to breathe, at least. With a groan, I pull myself out.
+dialogue~MC~My ship’s a mess.~Okay, it was a mess before, but at least it could actually fly. Without the thruster that boulder knocked off, it’s not going to leave the ground, much less the planet.~Guess I can check this out…
 dialogue~MC~"I see a jungle in the distance and I'm pretty sure I saw a piece of my ship fall over there.  I should probably check that out..."
+stopmusic~MAIN_AREA_SONG
 loadscript~JungleSectionOpening

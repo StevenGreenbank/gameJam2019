@@ -1,3 +1,4 @@
+playsound~DINO-LAUGH
 removeallsprites
 closedialogue
 loadscript~SkySectionResolution

@@ -1,0 +1,40 @@
+closedialogue
+background~Repaired_Spaceship
+playmusic~MAIN_AREA_SONG
+dialogue~MC~I have to tell them.
+dialogue~MC~“Thank you. All of you. But…”
+dialogue~MC~“Can I… think about it?”
+dialogue~Kasma~“About what?”
+dialogue~Gloonk~looks thoughtfully at me and the ship.
+dialogue~Gloonk~“I think I understand.”
+comment~TODO: playsound~do_whats_best_for_you
+dialogue~Gloonk~“Go ahead. Do what’s best for you.”
+dialogue~MC~“...”
+dialogue~Ayzax “Waiiiiiiiit. I don’t get it.”
+dialogue~Kasma~“Wait. You mean you want to stay?”
+dialogue~MC~“You all helped me. You’ve been so nice.”
+dialogue~Gloonk~“Of course! It’s the right thing to do.”
+playsound~Ayzax_A-true-adventurer
+dialogue~Ayzax~“You helped us, too! You braved the mountains to retrieve my book, with the spirit of a true adventurer!”
+dialogue~MC~“I know it’s a big thing to ask, but I just don’t feel like my planet is… home. I don’t even think there’s anyone left who would miss me.”
+playsound~Kasma_Who-Cares
+dialogue~Kasma~“Who cares what they think? Forget the establishment. You want to stay, you’re ours. Simple as that.”
+dialogue~MC~I didn’t know what I thought would happen. But as they all start to smile, even Gloonk~with that face, my heart starts beating harder.
+dialogue~MC~“I know we all just spent all that time rebuilding my ship, but…”
+dialogue~Ayzax~“But that’s great! It’s just like a mobile home!”
+dialogue~MC~“You have those on this planet?”
+dialogue~Ayzax~“You just need some furniture now.”
+dialogue~Ayzax~“Maybe a new washing machine.”
+dialogue~Kasma~“Bookshelf wall?”
+dialogue~MC~“Everyone…”
+dialogue~Gloonk~“We can introduce you to the rest of the town. If you need anything, just call us.”
+dialogue~MC~“...Yeah. You can count on me, too.”
+dialogue~MC~As I look up into the sky, leaving my old world behind, I wonder.
+dialogue~MC~Maybe I won’t go back now.
+dialogue~MC~But in the end, home is the place I came to. The place where I was welcomed all along. 
+stopmusic~MAIN_AREA_SONG
+playvideo~CREDITS
+wait~150
+stopvideo~CREDITS
+dialogue~Cult Of Cake~Thanks for playing the prototype of Once Upon a Planet!~This was the demo we couldn't put together in time for the game jam~Hope you enjoyed what's here, we're going to try to add more features to the game and improve the puzzles!
+loadscript~OpeningScript

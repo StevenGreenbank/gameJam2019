@@ -103,7 +103,7 @@ public class GameManager : Singleton<GameManager>
                 RemoveAllSprites();
                 break;
             case "wait":
-                float  timer = float.Parse(instruction.variables[0]);
+                float timer = float.Parse(instruction.variables[0]);
                 runNextInstruction = false;
                 StartCoroutine(Wait(timer));
                 break;
@@ -144,6 +144,9 @@ public class GameManager : Singleton<GameManager>
             case "playvideo":
                 PlayVideo(instruction.variables[0]);
                 break;
+            case "stopvideo":
+                StopVideo(instruction.variables[0]);
+                break;
             default:
                 break;
         }
@@ -155,7 +158,10 @@ public class GameManager : Singleton<GameManager>
     {
         videoManager.PlayMovie(videoName);
     }
-
+    private void StopVideo(string videoName)
+    {
+        videoManager.StopMovie(videoName);
+    }
     private void RemoveUnusedBranchCommands()
     {
         Instruction trash;
