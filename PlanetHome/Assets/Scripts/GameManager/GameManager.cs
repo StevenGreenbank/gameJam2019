@@ -6,9 +6,9 @@ using System;
 using System.IO;
 using System.Text.RegularExpressions;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : IGameManager
 {
-    public DialogueManager dialogueManager;
+    public IDialogueManager dialogueManager;
     public BackgroundManager backgroundManager;
     public SpriteManager spriteManager;
     public AudioManager audioManager;
@@ -288,9 +288,7 @@ public class GameManager : Singleton<GameManager>
         string name = variables[0];
         var trimmed = variables.ToList();
         trimmed.RemoveAt(0);
-        // horrible hack
-        if (dialogueManager.dialogueEnd == null)
-            dialogueManager.dialogueEnd += RunScript;
+        dialogueManager.dialogueEnd += RunScript;
         dialogueManager.StartDialogue(new Dialogue(name, trimmed.ToArray()));
     }
 
