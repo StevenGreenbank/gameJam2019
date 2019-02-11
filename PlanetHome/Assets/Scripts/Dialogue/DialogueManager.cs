@@ -3,25 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : Singleton<DialogueManager>, IDialogueManager
+public class DialogueManager : Singleton<DialogueManager>
 {
     public Text nameText;
     public Text dialogueText;
-    protected Queue<string> sentences;
-    public Image dialogueWindow;
+    private Queue<string> sentences;
+    public Image image;
+    public bool isInDialogue;
+    public Dictionary<string, string> textStuff;
 
-    public event OnDialogueEnd dialogueEnd
-    {
-        add
-        {
-            dialogueEnd -= value;
-            dialogueEnd += value;
-        }
-        remove
-        {
-            dialogueEnd -= value;
-        }
-    }
+    public  delegate void OnDialogueEnd();
+    public OnDialogueEnd dialogueEnd;
 
     void Start()
     {
@@ -44,6 +36,7 @@ public class DialogueManager : Singleton<DialogueManager>, IDialogueManager
         nameText.text = dialogue.name;
 
         SetDialogueBoxState(true);
+        isInDialogue = true;
 
         sentences.Clear();
 
@@ -72,14 +65,14 @@ public class DialogueManager : Singleton<DialogueManager>, IDialogueManager
     {
         Debug.Log("End of conversation");
         SetDialogueBoxState(false);
+        isInDialogue = false;
         dialogueEnd?.Invoke();
-       
        // dialogueEnd = null;
     }
 
-    public void SetDialogueBoxState(bool active)
+    private void SetDialogueBoxState(bool active)
     {
-        dialogueWindow.enabled = active;
-        dialogueWindow.transform.gameObject.SetActive(active);
+        image.enabled = active;
+        image.transform.gameObject.SetActive(active);
     }
 }
